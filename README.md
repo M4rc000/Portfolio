@@ -62,7 +62,7 @@ Project Link: [https://github.com/M4rc000/Portfolio](https://github.com/M4rc000/
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [linkedin-url]: https://www.linkedin.com/in/marco-antonio-6168121b0/
-[product-screenshot]: ./assets/img/Preview.png
+[product-screenshot]: ./src/img/Preview.png
 [HTML.com]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 [HTML-url]: https://developer.mozilla.org/en-US/docs/Web/HTML/
 [CSS.com]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
