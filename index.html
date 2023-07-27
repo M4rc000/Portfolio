@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./dist/output.css" rel="stylesheet" />
   <link rel="shortcut icon" href="./src/img/Marco.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <title>Portfolio | Marco Antonio</title>
 </head>
 
@@ -53,7 +54,7 @@
   <section id="home" class="pt-36">
     <div class="container">
       <div class="flex flex-wrap">
-        <div class="w-full self-center px-4 lg:w-1/2">
+        <div class="w-full self-center px-4 lg:w-1/2 md:w-1/2" id="app">
           <h1 class="text-base font-semibold text-primary md:text-xl">Hi 👋, I'm <span
               class="block font-bold text-slate-900 mt-1 text-4xl">Marco Antonio</span></h1>
           <h2 class="mb-3 text-lg font-medium text-secondary lg:text-2xl"><span class="text-fuchsia-800 lg:2xl">Web
@@ -125,7 +126,7 @@
             </a>
           </div>          
         </div>
-        <div class="w-full self-end px-4 lg:w-1/2">
+        <div class="w-full self-end px-4 lg:w-1/2 md:w-1/2">
           <div class="relative mt-10 lg:right-0 lg:mt-9">
             <img src="./src/img/Hero.jpg" alt="Marco Antonio"
               class="relative z-10 mx-auto max-w-full rounded-lg border-4 outline outline-offset-1 outline-emerald-500" />
@@ -486,6 +487,34 @@
           </div>
         </div>
       </div>
+      <div class="flex flex-wrap">
+        <div class="mb-5 w-full px-4">
+          <h5 class="pt-10 text-black font-semibold pb-3 text-lg uppercase">certificate</h5>
+          <div class="grid w-full md:grid-cols-2 md:gap-3 lg:grid-cols-2 lg:gap-3 xl:gap-3 px-4 xl:grid-cols-3 mb-10 justify-center mt-5">
+            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-1.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-1.webp" alt=""></a>
+            </div>
+            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-2.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-2.webp" alt=""></a>
+            </div>
+            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-3.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-3.webp" alt=""></a>
+            </div>
+            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-4.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-4.webp" alt=""></a>
+            </div>
+            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-5.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-5.webp" alt=""></a>
+            </div>
+            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-6.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-6.webp" alt=""></a>
+            </div>
+            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-6.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-7.webp" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- END OF ABOUT SECTION -->
@@ -500,12 +529,18 @@
       <div class="grid w-full lg:grid-cols-2 xl:gap-5 px-4 xl:mx-auto xl:w-10/12 mb-10 justify-center">
         <div class="mb-12 p-4 w-72  md:w-full shadow-md bg-stone-50 rounded-xl xl:w-full border-b-4 border-emerald-400">
           <div class="overflow-hidden rounded-md shadow-md">
-            <img src="./src/img/project/CoffeeShop.png" alt="CoffeeShop" width="w-full" />
+            <img src="./src/img/project/CoffeeShop.png" alt="" width="w-full" />
           </div>
           <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white text-center">CoffeeShop</h3>
           <p class="text-base font-medium text-secondary">The project above is a coffeeshop website which contains
             about, product, prices and contacts.</p>
-          <p class="text-base font-medium text-secondary">
+          <p class="text-base font-medium text-secondary mt-5">
+            <div class="grid grid-cols-2 gap-2">
+                <a href="https://github.com/M4rc000/KakaPit-CoffeeShop_2" target="_blank"
+                class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-code-slash text-xl mx-auto"></i></a>
+              <a href="https://m4rc000.github.io/KakaPit-CoffeeShop_2/" target="_blank"
+              class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-eye-fill text-xl mx-auto"></i></a>
+            </div>
             <h6 class="pt-5 pb-2 text-base font-semibold">Tools</h6>
             <div class="flex items-center">
               <div
@@ -550,7 +585,13 @@
           <p class="text-base font-medium text-secondary">The project above is an olshop website named Reginashop,
             Actually this project is the real shop owned by my mom. This project contains beauty, healthy and home
             products.</p>
-          <p class="text-base font-medium text-secondary">
+          <p class="text-base font-medium text-secondary mt-5">
+            <div class="grid grid-cols-2 gap-2">
+              <a href="https://github.com/M4rc000/Reginashop" target="_blank"
+              class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-code-slash text-xl mx-auto"></i></a>
+            <a href="https://m4rc000.github.io/reginashop/" target="_blank"
+            class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-eye-fill text-xl mx-auto"></i></a>
+          </div>
             <h6 class="pt-5 pb-2 text-base font-semibold">Tools</h6>
             <div class="flex items-center">
               <div
@@ -589,11 +630,17 @@
         </div>
         <div class="mb-12 p-4 w-72  md:w-full shadow-md bg-stone-50 rounded-xl xl:w-full border-b-4 border-emerald-400">
           <div class="overflow-hidden rounded-md shadow-md">
-            <img src="./src/img/project/Game.png" alt="CoffeeShop" width="w-full" />
+            <img src="./src/img/project/Game.png" alt="" width="w-full" />
           </div>
           <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white text-center">WWF Game</h3>
           <p class="text-base font-medium text-secondary">The project above is a about elements fight game.</p>
-          <p class="text-base font-medium text-secondary">
+          <p class="text-base font-medium text-secondary mt-5">
+            <div class="grid grid-cols-2 gap-2">
+              <a href="https://github.com/M4rc000/elementsgame" target="_blank"
+              class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-code-slash text-xl mx-auto"></i></a>
+            <a href="https://m4rc000.github.io/elementsgame/" target="_blank"
+            class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-eye-fill text-xl mx-auto"></i></a>
+          </div>
             <h6 class="pt-5 pb-2 text-base font-semibold">Tools</h6>
             <div class="flex items-center">
               <div
@@ -632,13 +679,17 @@
         </div>
         <div class="mb-12 p-4 w-72  md:w-full shadow-md bg-stone-50 rounded-xl xl:w-full border-b-4 border-emerald-400">
           <div class="overflow-hidden rounded-md shadow-md">
-            <img src="./src/img/project/University.png" alt="CoffeeShop" width="w-full" />
+            <img src="./src/img/project/University.png" alt="" width="w-full" />
           </div>
           <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white text-center">University Management System
           </h3>
           <p class="text-base font-medium text-secondary">The project above is a university management system which
             contains manage roles, announcements, assigments and grade such as adding, editing and deleting.</p>
-          <p class="text-base font-medium text-secondary">
+          <p class="text-base font-medium text-secondary mt-5">
+            <div class="grid grid-cols-1 gap-2">
+              <a href="https://github.com/M4rc000/university" target="_blank"
+              class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-code-slash text-xl mx-auto"></i></a>
+          </div>
             <h6 class="pt-5 pb-2 text-base font-semibold">Tools</h6>
             <div class="flex items-center">
               <div
@@ -723,7 +774,7 @@
         <div
           class="mb-12 p-4 w-72  md:w-full shadow-md bg-stone-50 rounded-xl xl:w-full border-b-4 border-emerald-400 xl:h-96">
           <div class="overflow-hidden rounded-md shadow-md">
-            <img src="./src/img/blog/1.png" alt="CoffeeShop" width="w-full" />
+            <img src="./src/img/blog/1.png" alt="" width="w-full" />
           </div>
           <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white text-center">HTML</h3>
           <p class="text-base font-medium text-secondary mb-5">Explanation of what, how to use and implement it about
@@ -836,6 +887,7 @@
 
   <script src="./dist/js/script.js"></script>
   <script type="text/javascript" src="./dist/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
 </body>
 
 </html>
