@@ -8,6 +8,12 @@
   <link rel="shortcut icon" href="./src/img/Marco.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <title>Portfolio | Marco Antonio</title>
+  <script src="./dist/js/jquery.js"></script>
+  <style>
+    .dark {
+      background-color: #0f172a;
+    }
+  </style>
 </head>
 
 <body>
@@ -16,7 +22,7 @@
     <div class="container">
       <div class="flex item-center justify-between relative">
         <div class="px-4">
-          <a href="#home" class="block py-6 text-lg font-bold text-primary">Portfolio</a>
+          <a href="#home" class="block py-6 text-xl font-bold text-primary">Portfolio</a>
         </div>
         <div class="flex item-center px-4">
           <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 py-4 lg:hidden">
@@ -25,22 +31,32 @@
             <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
           </button>
           <nav id="nav-menu"
-            class="hidden absolute py-5 bg-white rounded-lg shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-            <ul class="block lg:flex">
-              <li class="group">
-                <a href="#home" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">Home</a>
+            class="hidden absolute py-5 bg-white rounded-lg shadow-lg max-w-2250px w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex gap-2">
+              <li class="group xl:rounded-lg xl:bg-primary">
+                <a href="#home"
+                  class="text-base text-dark py-2 mx-8 max-md:group-hover:text-primary group-hover:text-[#ffffff71] flex xl:text-white">Home</a>
               </li>
-              <li class="group">
-                <a href="#about" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">About</a>
+              <li class="group xl:rounded-lg xl:bg-primary">
+                <a href="#about"
+                  class="text-base text-dark py-2 mx-8 max-md:group-hover:text-primary group-hover:text-[#ffffff71] flex xl:text-white">About</a>
               </li>
-              <li class="group">
-                <a href="#project" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">Project</a>
+              <li class="group xl:rounded-lg xl:bg-primary">
+                <a href="#project"
+                  class="text-base text-dark py-2 mx-8 max-md:group-hover:text-primary group-hover:text-[#ffffff71] flex xl:text-white">Project</a>
               </li>
-              <li class="group">
-                <a href="#blog" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">Blog</a>
+              <li class="group xl:rounded-lg xl:bg-primary">
+                <a href="#blog"
+                  class="text-base text-dark py-2 mx-8 max-md:group-hover:text-primary group-hover:text-[#ffffff71] flex xl:text-white">Blog</a>
               </li>
-              <li class="group">
-                <a href="#contact" class="text-base text-dark py-2 mx-8 group-hover:text-primary flex">Contact</a>
+              <li class="group xl:rounded-lg xl:bg-primary">
+                <a href="#contact"
+                  class="text-base text-dark py-2 mx-8 max-md:group-hover:text-primary group-hover:text-[#ffffff71] flex xl:text-white">Contact</a>
+              </li>
+              <li class="mt-3 flex items-center px-3 lg:mt-0 xl:bg-primary xl:rounded-lg">
+                <button class="max-md:ml-5 xl:pl-0" type="button" id="lightMode">
+                  <i class="bi bi-cloud-sun-fill text-xl text-primary sm:text-primary xl:text-white"></i>
+                </button>
               </li>
             </ul>
           </nav>
@@ -55,16 +71,12 @@
     <div class="container">
       <div class="flex flex-wrap">
         <div class="w-full self-center px-4 lg:w-1/2 md:w-1/2" id="app">
-          <h1 class="text-base font-semibold text-primary md:text-xl">Hi 👋, I'm <span
-              class="block font-bold text-slate-900 mt-1 text-4xl">Marco Antonio</span></h1>
+          <h1 class="text-base font-semibold text-primary md:text-xl ">Hi 👋, I'm <span
+              class="block font-bold text-slate-900 mt-1 text-4xl dark:text-white typing-name">Marco Antonio</span></h1>
           <h2 class="mb-3 text-lg font-medium text-secondary lg:text-2xl"><span class="text-fuchsia-800 lg:2xl">Web
               Developer</span> | <span class="text-rose-800 lg:2xl">Software Designer</span></h2>
-          <p class="font-medium text-secondary leading-relaxed antialiased text-justify">Keep coding & Stay awesome
-          </p>
-          <button type="button" data-te-ripple-init data-te-ripple-color="light"
-            class="mb-1 inline-block rounded-full p-3 leading-normal bg-stone-50 shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
-          </button>
-          <div class="flex -mt-5">
+          <p class="font-medium text-secondary leading-relaxed antialiased text-justify">Keep coding & Stay awesome</p>
+          <div class="flex mt-5">
             <!-- LINKEDIN -->
             <a href="https://www.linkedin.com/in/marco-antonio-6168121b0/" target="_blank"
               class="mr-3 flex h-14 w-14 items-center justify-center drop-shadow-lg"><button type="button"
@@ -118,18 +130,17 @@
           </div>
           <div class="flex mt-5">
             <a href="./src/doc/CV.pdf">
-              <button type="button" data-te-ripple-init data-te-ripple-color="light" class="bg-primary border-2 font-medium px-7 py-3 rounded-full inline-block text-lg uppercase text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">CV&nbsp;&nbsp;
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mr-2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                </svg>
+              <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                class="bg-primary border-2 font-medium px-7 py-3 rounded-full inline-block text-md uppercase text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">Curiculum Vitae
               </button>
             </a>
-          </div>          
+          </div>
         </div>
         <div class="w-full self-end px-4 lg:w-1/2 md:w-1/2">
           <div class="relative mt-10 lg:right-0 lg:mt-9">
-            <img src="./src/img/Hero.jpg" alt="Marco Antonio"
-              class="relative z-10 mx-auto max-w-full rounded-lg border-4 outline outline-offset-1 outline-emerald-500" />
+            <img src="./src/img/Marco.png" alt="Marco Antonio"
+              class="relative z-10 mx-auto max-w-full rounded-lg border-4 outline outline-offset-1 outline-emerald-500"
+              style="width: 308px; height: 308px;" />
           </div>
         </div>
       </div>
@@ -155,7 +166,7 @@
           </p>
         </div>
         <div class="w-full px-4 lg:w-1/2">
-          <h5 class="pt-10 text-black font-semibold pb-3 text-lg">SKILLS</h5>
+          <h5 class="pt-10 text-black font-semibold pb-3 text-lg dark:text-white">SKILLS</h5>
           <div class="flex items-center">
             <!-- HTML -->
             <a
@@ -489,31 +500,48 @@
       </div>
       <div class="flex flex-wrap">
         <div class="mb-5 w-full px-4">
-          <h5 class="pt-10 text-black font-semibold pb-3 text-lg uppercase">certificate</h5>
-          <div class="grid w-full md:grid-cols-2 md:gap-3 lg:grid-cols-2 lg:gap-3 xl:gap-3 px-4 xl:grid-cols-3 mb-10 justify-center mt-5">
-            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
-              <a href="./src/img/certificates/Sertifikat-1.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-1.webp" alt=""></a>
+          <h5 class="pt-10 text-black font-semibold pb-3 text-lg uppercase dark:text-white">certificates</h5>
+          <div
+            class="grid w-full md:grid-cols-2 md:gap-3 lg:grid-cols-2 lg:gap-3 xl:gap-3 px-4 xl:grid-cols-3 mb-10 justify-center mt-5">
+            <div
+              class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-1.webp" target="_blank"><img
+                  src="./src/img/certificates/Sertifikat-1.webp" alt=""></a>
             </div>
-            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
-              <a href="./src/img/certificates/Sertifikat-2.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-2.webp" alt=""></a>
+            <div
+              class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-2.webp" target="_blank"><img
+                  src="./src/img/certificates/Sertifikat-2.webp" alt=""></a>
             </div>
-            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
-              <a href="./src/img/certificates/Sertifikat-3.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-3.webp" alt=""></a>
+            <div
+              class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-3.webp" target="_blank"><img
+                  src="./src/img/certificates/Sertifikat-3.webp" alt=""></a>
             </div>
-            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
-              <a href="./src/img/certificates/Sertifikat-4.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-4.webp" alt=""></a>
+            <div
+              class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-4.webp" target="_blank"><img
+                  src="./src/img/certificates/Sertifikat-4.webp" alt=""></a>
             </div>
-            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
-              <a href="./src/img/certificates/Sertifikat-5.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-5.webp" alt=""></a>
+            <div
+              class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-5.webp" target="_blank"><img
+                  src="./src/img/certificates/Sertifikat-5.webp" alt=""></a>
             </div>
-            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
-              <a href="./src/img/certificates/Sertifikat-6.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-6.webp" alt=""></a>
+            <div
+              class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-6.webp" target="_blank"><img
+                  src="./src/img/certificates/Sertifikat-6.webp" alt=""></a>
             </div>
-            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
-              <a href="./src/img/certificates/Sertifikat-7.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-7.webp" alt=""></a>
+            <div
+              class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-7.webp" target="_blank"><img
+                  src="./src/img/certificates/Sertifikat-7.webp" alt=""></a>
             </div>
-            <div class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
-              <a href="./src/img/certificates/Sertifikat-8.webp" target="_blank"><img src="./src/img/certificates/Sertifikat-8.webp" alt=""></a>
+            <div
+              class="cover-certificate mb-12 p-4 w-72  md:w-full shadow-md bg-slate-200 rounded-xl xl:w-full border-b-4 border-emerald-400">
+              <a href="./src/img/certificates/Sertifikat-8.webp" target="_blank"><img
+                  src="./src/img/certificates/Sertifikat-8.webp" alt=""></a>
             </div>
           </div>
         </div>
@@ -523,7 +551,7 @@
   <!-- END OF ABOUT SECTION -->
 
   <!-- PROJECT SECTION -->
-  <section id="project" class="pt-36 pb-16 bg-slate-200">
+  <section id="project" class="pt-36 pb-16 bg-slate-200 dark:bg-[#1e293b]">
     <div class="container">
       <div class="w-full mb-24">
         <h4 class="mb-3 text-lg lg:text-xl text-center font-bold uppercase text-primary">PROJECT</h4>
@@ -539,10 +567,12 @@
             about, product, prices and contacts.</p>
           <p class="text-base font-medium text-secondary mt-5">
             <div class="grid grid-cols-2 gap-2">
-                <a href="https://github.com/M4rc000/KakaPit-CoffeeShop_2" target="_blank"
-                class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-code-slash text-xl mx-auto"></i></a>
+              <a href="https://github.com/M4rc000/KakaPit-CoffeeShop_2" target="_blank"
+                class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i
+                  class="bi bi-code-slash text-xl mx-auto"></i></a>
               <a href="https://m4rc000.github.io/KakaPit-CoffeeShop_2/" target="_blank"
-              class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-eye-fill text-xl mx-auto"></i></a>
+                class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i
+                  class="bi bi-eye-fill text-xl mx-auto"></i></a>
             </div>
             <h6 class="pt-5 pb-2 text-base font-semibold">Tools</h6>
             <div class="flex items-center">
@@ -591,10 +621,12 @@
           <p class="text-base font-medium text-secondary mt-5">
             <div class="grid grid-cols-2 gap-2">
               <a href="https://github.com/M4rc000/Reginashop" target="_blank"
-              class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-code-slash text-xl mx-auto"></i></a>
-            <a href="https://m4rc000.github.io/reginashop/" target="_blank"
-            class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-eye-fill text-xl mx-auto"></i></a>
-          </div>
+                class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i
+                  class="bi bi-code-slash text-xl mx-auto"></i></a>
+              <a href="https://m4rc000.github.io/reginashop/" target="_blank"
+                class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i
+                  class="bi bi-eye-fill text-xl mx-auto"></i></a>
+            </div>
             <h6 class="pt-5 pb-2 text-base font-semibold">Tools</h6>
             <div class="flex items-center">
               <div
@@ -640,10 +672,12 @@
           <p class="text-base font-medium text-secondary mt-5">
             <div class="grid grid-cols-2 gap-2">
               <a href="https://github.com/M4rc000/elementsgame" target="_blank"
-              class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-code-slash text-xl mx-auto"></i></a>
-            <a href="https://m4rc000.github.io/elementsgame/" target="_blank"
-            class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-eye-fill text-xl mx-auto"></i></a>
-          </div>
+                class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i
+                  class="bi bi-code-slash text-xl mx-auto"></i></a>
+              <a href="https://m4rc000.github.io/elementsgame/" target="_blank"
+                class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i
+                  class="bi bi-eye-fill text-xl mx-auto"></i></a>
+            </div>
             <h6 class="pt-5 pb-2 text-base font-semibold">Tools</h6>
             <div class="flex items-center">
               <div
@@ -691,8 +725,9 @@
           <p class="text-base font-medium text-secondary mt-5">
             <div class="grid grid-cols-1 gap-2">
               <a href="https://github.com/M4rc000/university" target="_blank"
-              class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i class="bi bi-code-slash text-xl mx-auto"></i></a>
-          </div>
+                class="rounded-lg bg-primary py-2 px-2 text-sm font-medium text-white hover:opacity-80 flex"><i
+                  class="bi bi-code-slash text-xl mx-auto"></i></a>
+            </div>
             <h6 class="pt-5 pb-2 text-base font-semibold">Tools</h6>
             <div class="flex items-center">
               <div
@@ -767,7 +802,7 @@
   <!-- END OF PROJECT SECTION -->
 
   <!-- BLOG SECTION -->
-  <section id="blog" class="pt-36 pb-16 bg-slate-800">
+  <section id="blog" class="pt-36 pb-16 bg-slate-950">
     <div class="container">
       <div class="w-full mb-24">
         <h4 class="mb-3 text-lg lg:text-xl text-center font-bold uppercase text-primary">BLOG</h4>
@@ -816,33 +851,38 @@
   <!-- END OF BLOG SECTION -->
 
   <!-- Contact Section Start -->
-  <section id="contact" class="pt-36 pb-32 dark:bg-slate-800 bg-[url('./src/img/backgroundContact.jpg')]">
+  <section id="contact" class="pt-44 pb-32 dark:bg-slate-800"
+    style="background-image: url('./src/img/backgroundContact.jpg');">
     <div class="container">
       <div class="w-full">
         <h4 class="mb-20 -mt-20 text-lg lg:text-xl text-center justify-center font-bold uppercase text-primary">Contact
         </h4>
         <div class="flex justify-center px-4">
-          <a href="mailto:marcoantoniomadgaskar@gmail.com?subject=Hi%20Marco,%20Let's%20Work%20Connect" target="_blank"><button type="button" data-te-ripple-init data-te-ripple-color="light"
-            class="flex items-center mt-5 px-6 py-4 bg-[#64a19d] rounded-md text-white text-base shadow-lg">
-            <span class="tracking-[0.15rem] uppercase text-xs ">Notify me</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-4 h-4 ml-2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-            </svg>
-          </button>
-        </a>
+          <a href="mailto:marcoantoniomadgaskar@gmail.com?subject=Hi%20Marco,%20Let's%20Work%20Connect"
+            target="_blank"><button type="button" data-te-ripple-init data-te-ripple-color="light"
+              class="flex items-center mt-5 px-6 py-4 bg-[#64a19d] rounded-md text-white text-base shadow-lg">
+              <span class="tracking-[0.15rem] uppercase text-xs ">Notify me</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4 ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+              </svg>
+            </button>
+          </a>
         </div>
-        <div class="grid w-full px-4 gap-1.5 lg:grid-cols-2 xl:gap-10 xl:mx-auto xl:w-5/12 mt-24 text-center justify-center">
+        <div
+          class="grid w-full px-4 gap-1.5 lg:grid-cols-2 xl:gap-10 xl:mx-auto xl:w-5/12 mt-24 text-center justify-center">
           <div
             class="mb-1 p-4 w-72 md:w-full shadow-md drop-shadow-md bg-stone-50 rounded-xl xl:w-full border-b-4 border-[#64a19d]">
             <span class="flex text-center justify-center mb-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#64a19d]">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-[#64a19d]">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
               </svg>
             </span>
             <span class="py-3 border-b-2 border-primary">
-            Address
+              Address
             </span>
             <span class="block mt-12 text-secondary">
               Villa Mutiara Jaya street, Bekasi, West Java 17520
@@ -851,12 +891,14 @@
           <div
             class="mb-1 p-4 w-72 md:w-full shadow-md drop-shadow-md bg-stone-50 rounded-xl xl:w-full border-b-4 border-[#64a19d]">
             <span class="flex text-center justify-center mb-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#64a19d]">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-              </svg>              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-[#64a19d]">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+              </svg>
             </span>
             <span class="py-3 border-b-2 border-primary">
-            Phone
+              Phone
             </span>
             <span class="block mt-12 text-secondary">
               +62 85774253973
@@ -870,9 +912,9 @@
   <!-- Contact Section End -->
 
   <!-- Footer Start -->
-  <footer class="bg-dark pt-6 pb-3">
+  <footer class="bg-dark pt-5 pb-3">
     <div class="container">
-      <div class="w-full pt-1">
+      <div class="w-full">
         <p class="text-center text-sm font-medium text-slate-500" id="Copyright">
         </p>
       </div>
@@ -890,7 +932,23 @@
 
   <script src="./dist/js/script.js"></script>
   <script type="text/javascript" src="./dist/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-
+  <script>
+    $(document).ready(function(){
+      if (!localStorage.getItem('theme')) {
+        localStorage.setItem('theme', 'dark');
+      }
+     
+      $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    });
+    });
+  </script>
+  
 </body>
-
 </html>
