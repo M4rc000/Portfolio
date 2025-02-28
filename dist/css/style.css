@@ -1,0 +1,155 @@
+/* PARALLAX CSS*/
+
+.about-me{
+    opacity: 0;
+    transform: translate(-80px, 0);
+    transition: 2s;
+}
+
+.about-me-show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.skills-title{
+  opacity: 0;
+  transform: translate(80px, 0);
+  transition: 2s;
+}
+
+.skills-title-show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.skills-icon-first a {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.10s ease, transform 0.5s ease;
+}
+
+.skills-icon-first a.skills-icon-first-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skills-icon-second a {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.10s ease, transform 0.5s ease;
+}
+
+.skills-icon-second a.skills-icon-second-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skills-icon-third a {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.10s ease, transform 0.5s ease;
+}
+
+.skills-icon-third a.skills-icon-third-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skills-icon-fourth a {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.10s ease, transform 0.5s ease;
+}
+
+.skills-icon-fourth a.skills-icon-fourth-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.certificates-title{
+  opacity: 0;
+  transform: translate(-80px, 0);
+  transition: 2s;
+}
+
+.certificates-title-show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.cover-certificate {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.cover-certificate.certificates-image-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-title{
+  opacity: 0;
+  transform: translate(-80px, 0);
+  transition: 2s;
+}
+
+.project-title-show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.cover-project {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.cover-project.project-image-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.blog-title{
+  opacity: 0;
+  transform: translate(-80px, 0);
+  transition: 2s;
+}
+
+.blog-title-show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.cover-blog {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.cover-blog.blog-image-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-title{
+  opacity: 0;
+  transform: translate(-80px, 0);
+  transition: 2s;
+}
+
+.contact-title-show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.cover-contact {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.cover-contact.contact-image-show {
+  opacity: 1;
+  transform: translateY(0);
+}
